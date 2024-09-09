@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Conversor de Divisas</h2>
+
+    <!-- Selección de divisa de origen -->
+    <label for="fromCurrency">Selecciona la divisa de origen:</label>
+    <select id="fromCurrency">
+        <option value="USD">Dólar estadounidense (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="GBP">Libra esterlina (GBP)</option>
+        <option value="JPY">Yen japonés (JPY)</option>
+        <option value="MXN">Peso mexicano (MXN)</option>
+    </select>
+
+    <!-- Selección de divisa de destino -->
+    <label for="toCurrency">Selecciona la divisa de destino:</label>
+    <select id="toCurrency">
+        <option value="EUR">Euro (EUR)</option>
+        <option value="USD">Dólar estadounidense (USD)</option>
+        <option value="CAD">Dólar canadiense (CAD)</option>
+        <option value="CHF">Franco suizo (CHF)</option>
+        <option value="CNY">Yuan chino (CNY)</option>
+    </select>
+
+    <!-- Campo de cantidad -->
+    <label for="amount">Ingresa la cantidad a convertir:</label>
+    <input type="number" id="amount" placeholder="Ingresa la cantidad">
+
+    <!-- Botón para convertir -->
+    <button onclick="convertCurrency()">Convertir</button>
+
+    <!-- Mostrar el resultado -->
+    <p id="result"></p>
+</div>
+
+<!-- Conectar el archivo JavaScript -->
+<script src="convert.js"></script>
+
+</body>
+</html>
